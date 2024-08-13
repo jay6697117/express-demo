@@ -10,6 +10,9 @@ middleware(app)
 // 路由注册
 router(app)
 
+
+app.use(express.static('public'))
+
 // 启动 Express 应用程序，监听在指定的端口上
 app.listen(PORT, () => {
   // 在控制台输出服务器运行信息
